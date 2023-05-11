@@ -92,6 +92,7 @@ function mergeSort(arr) {
   // sorting each subarray of arr1.
   for (let i = 0; i < arr1_subarrays.length; i += 2) {
     let result = merge(arr1_subarrays[i], arr1_subarrays[i + 1]);
+
     result.forEach((value) => sorted_arr1_subarrays.push(value));
   }
 
